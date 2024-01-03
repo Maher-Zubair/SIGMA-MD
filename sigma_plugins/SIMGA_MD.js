@@ -31,7 +31,7 @@
 
 
   sɪɢᴍᴀ_ᴍᴅ.Module_Exports({
-          kingcmd: "ownner",
+          kingcmd: "owner",
           infocmd: "to check owner number",
           kingclass: "general",
 

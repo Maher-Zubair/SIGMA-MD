@@ -32,7 +32,7 @@ async(sigma, person) => {
     const { key } = await sigma.sendMessage(person.chat, {text: '_Checking ping!!!_'});
     var final = new Date().getTime();
    // await Secktor.sleep(1000)
-   return await sigma.sendMessage(person.chat, {text: '*𝘗𝘐𝘕𝘎*\n *' + (final - inital) + ' 𝘔𝘚* ', edit: key});
+   return await sigma.sendMessage(person.chat, {text: '*ᴩᴏɴɢ🎈*\n *' + (final - inital) + ' ᴍꜱ* ', edit: key});
 }
 );
 //---------------------------------------------------------------------------
