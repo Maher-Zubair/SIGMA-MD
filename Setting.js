@@ -3,31 +3,31 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 
 //═══════[Required Variables]════════,[Make sure you put all values in "" , '']\\
-global.owner = process.env.OWNER_NUMBER || '923466319114' ; // Add Your Number without +
+global.owner = process.env.OWNER_NUMBER || '923252752761' ; // Add Your Number without +
 global.mongodb = process.env.MONGODB_URI || "mongodb+srv://Maher-Zubair:SIGMA-MD@zubi.9g6b16y.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp" ; // put mongodb key here
 global.port=5000  ;
 global.audio = '' ; 
 global.video = '' ;
 global.blockJids = process.env.BLOCK_JID ||'120363169665426586@g.us' ;
 global.allowJids = process.env.ALLOW_JID ||'120363169665426586@g.us' ;
-global.email = 'HELP_SIGMA-MD@outlook.com' ; 
+global.email = 'alikingofficial1@usa.com' ; 
 global.github = 'https://github.com/Maher-Zubair/SIGMA-MD' ;
 global.location = 'Lahore Pakistan' ;
 global.timezone  = process.env.TIME_ZONE || 'Asia/Karachi' //add correct timezone or leave it same , otherwise you get erros
-global.gurl = 'https://www.youtube.com/@InnoxentTech?sub_confirmation=1' ; 
-global.sudo =  process.env.SUDO || "923466319114" ; // Do not change it
-global.devs = "923466319114"; //Dont change it From here
-global.mztit = process.env.MZTIT ||"🅼♥︎❚❚♥︎🆉", // add your title here
+global.gurl = 'https://chat.whatsapp.com/H4WCzWLVhsk8J5gIKQOyPP' ; 
+global.sudo =  process.env.SUDO || "923252752761" ; // Do not change it
+global.devs = "923252752761"; //Dont change it From here
+global.mztit = process.env.MZTIT ||"ALI_KING", // add your title here
 global.Gname = process.env.GNAME ||"sɪɢᴍᴀ ᴹᴰ-sᴜᴘᴘᴏʀᴛ",
-global.zyt = process.env.ZYT || 'https://www.youtube.com/@InnoxentTech?sub_confirmation=1',
-global.waUrl = process.env.WAURL ||"https://chat.whatsapp.com/CmY0THcJCUYEGxLJulhcRV",
+global.zyt = process.env.ZYT || 'https://chat.whatsapp.com/H4WCzWLVhsk8J5gIKQOyPP',
+global.waUrl = process.env.WAURL ||"https://chat.whatsapp.com/H4WCzWLVhsk8J5gIKQOyPP",
 global.website = 'http://lnkiy.in/SIGMA-MD-WEB' ; 
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/03e49e6e2057568db8926.jpg' ;
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://www.linkpicture.com/q/Ali-KIng.png' ;
 module.exports = {
   sessionName: process.env.SESSION_ID || '',      //Put Your Session Id Here
-  botname: process.env.BOT_NAME || 'sɪɢᴍᴀ ᴹᴰ',  // add the botname you want
-  ownername:  process.env.OWNER_NAME || `ᴍᴀʜᴇʀ ᴢᴜʙᴀɪʀ`, // add your name
-  author:  process.env.PACK_AUTHER || 'ᴍᴀʜᴇʀ ᴢᴜʙᴀɪʀ', 
+  botname: process.env.BOT_NAME || 'ALI ᴹᴰ',  // add the botname you want
+  ownername:  process.env.OWNER_NAME || `ALI`, // add your name
+  author:  process.env.PACK_AUTHER || 'ALI_KING', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false', // if it true it automatically views status and send status in your inbox
   packname:  process.env.PACK_NAME || "sɪɢᴍᴀ ᴹᴰ" , 
   autoreaction: process.env.AUTO_REACTION || 'true', // if it true it will react to all messages
