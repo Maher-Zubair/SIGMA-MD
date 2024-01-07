@@ -28,7 +28,7 @@ module.exports = {
   botname: process.env.BOT_NAME || 'sɪɢᴍᴀ ᴹᴰ',  // add the botname you want
   ownername:  process.env.OWNER_NAME || `ᴍᴀʜᴇʀ ᴢᴜʙᴀɪʀ`, // add your name
   author:  process.env.PACK_AUTHER || 'ᴍᴀʜᴇʀ ᴢᴜʙᴀɪʀ', 
-  auto_read_status : process.env.AUTO_READ_STATUS || 'false', // if it true it automatically views status and send status in your inbox
+  auto_read_status : process.env.AUTO_READ_STATUS || 'true', // if it true it automatically views status and send status in your inbox
   packname:  process.env.PACK_NAME || "sɪɢᴍᴀ ᴹᴰ" , 
   autoreaction: process.env.AUTO_REACTION || 'true', // if it true it will react to all messages
   antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokey',
