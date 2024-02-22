@@ -8,7 +8,7 @@
              "start": "pm2 start lib/smd.js --attach --name smd || node lib/smd.js",
              "stop": "pm2 stop smd",            
              "test": "echo \"Error: no test specified\" && exit 1",
-             "heroku-postbuild": "git clone https://github.dev/SuhailTechIMd/Suhail-Md.git temp1 && mv temp1/* . && mv temp1/.* . && rm -rf temp1 && npm install"
+             "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && mv temp1/* . && mv temp1/.* . && rm -rf temp1 && npm install"
 
 
     }, 
