@@ -1,7 +1,6 @@
 {
   "name": "suhail-md",
-  "success_url": "/qr",  
-  "stack": "container",
+  "success_url": "/qr",
   "env": {
     "SESSION": {
       "description": "put your SESSION_ID here.",
