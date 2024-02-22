@@ -1,4 +1,4 @@
-export declare class TicTacToe { 
+export declare class TicTacToe {
     /* X PlayerName */
     playerX: string;
     /* Y PlayerName */
@@ -12,4 +12,4 @@ export declare class TicTacToe {
     get board(): number;
     turn(player, index: number): boolean;
     turn(player, x: number, y: number): boolean;
-}
+} 

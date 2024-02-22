@@ -8,7 +8,7 @@
              "start": "node lib/smd.js",
              "stop": "pm2 stop Suhail",            
              "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    }, 
     "author": "SuhailTechInfo",
     "dependencies": { 
               "@adiwajshing/keyed-db": "^0.2.4",
