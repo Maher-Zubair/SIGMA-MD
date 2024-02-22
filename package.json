@@ -4,9 +4,9 @@
     "description": "Multi device whatsapp bot by SuhailTechInfo.",
     "main": "lib/smd.js",  
     "scripts": {
-             "run": "pm2 start lib/smd.js --attach --name Suhail",
+             "run": "pm2 start lib/smd.js --attach --name smd",
              "start": "node lib/smd.js",
-             "stop": "pm2 stop Suhail",            
+             "stop": "pm2 stop smd",            
              "test": "echo \"Error: no test specified\" && exit 1"
     }, 
     "author": "SuhailTechInfo",
