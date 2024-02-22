@@ -4,11 +4,11 @@
     "description": "Multi device whatsapp bot by SuhailTechInfo.",
     "main": "lib/client.js",  
     "scripts": {        
-             "run": "pm2 start lib/client.js --attach --name smd",
-             "start": "pm2 start lib/client.js --attach --name smd || node lib/client.js",
-             "stop": "pm2 stop smd",            
-             "test": "echo \"Error: no test specified\" && exit 1",
-             "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm install"
+        "run": "pm2 start lib/client.js --deep-monitoring --attach --name smd",
+        "start": "pm2 start lib/client.js --attach --name smd || node lib/client.js",
+        "stop": "pm2 stop smd",            
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i"
     }, 
     "author": "SuhailTechInfo",
     "dependencies": { 
@@ -59,12 +59,16 @@
               "link-preview-js": "^3.0.0"
     },
     "directories": {
-              "lib": "lib",
-              "assets": "lib/assets",
-              "plugins" : "plugins"
+        "lib": "lib",
+        "assets": "lib/assets",
+        "plugins" : "plugins"
     },
-    "devDependencies": {
-              "pino": "^7.0.5"
-    }
+    "devDependencies": { "pino": "^7.0.5" },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuhailTechInfo/Suhail-Md.git"
+    },
+    "bugs": { "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues"  },
+    "homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
  }
  

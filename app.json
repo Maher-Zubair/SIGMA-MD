@@ -1,11 +1,139 @@
 {
   "name": "suhail-md",
-  "success_url": "/qr",
+  "description": "I am Suhail-Md Whatsapp Chuddy Buddy built in NodeJs to make experience better\n\t if Any Problem : www.youtube.com/c/SuhailTechInfo",
+  "success_url": "/suhail/",
+  "app_url": "/suhail/",
+
   "env": {
+    "OWNER_NAME": {
+      "description": "Name of Bot Owner",    
+      "value": "Suhail Ser",
+      "required" :true
+    },   
+     
+    "WELCOME": {
+      "description": "put 'false' or 'true' to enable & disable WELCOME ",
+      "value": "false",
+      "required" :false
+    },
+     
+    "GOODBYE": {
+      "description": "put 'false' or 'true' to enable & disable GOODBYE ",
+      "value": "false",
+      "required" :false
+    },
+    "BOT_NAME": {
+      "description": " NAME FOR BOT",
+      "required" :false,    
+      "value": "sᴜʜᴀɪʟ-ᴍᴅ"
+    }, 
+    "IMAGE": {
+      "description": "Image for bot",
+      "required" :false,    
+      "value": "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg"
+    }, 
+    "TZ": {
+      "description": "Put TIME_ZONE according to your location",
+      "required" :false,    
+      "value": "Asia/Karachi"
+    },  
+    "FLUSH": {
+      "description": " Make it 'true' if bot connected but not responed (After deployement!)",
+      "required" :false,    
+      "value": "true"
+    }, 
+    "WARN_COUNT": {
+      "description": " Warn count for users to kick/block when warn limit exceed!",
+      "required" :false,    
+      "value": "3"
+    }, 
+    "READ_COMMAND": {
+      "description": " Read bot cmds",
+      "required" :false,    
+      "value": "false"
+    }, 
+    "AUTO_SAVE_STATUS": {
+      "description": " Auto save whatsapp status", 
+      "required" :false,   
+      "value": "false"
+    }, 
+    "HEROKU_API_KEY": {
+      "description": "Put Your Heroku Api Key Here",
+      "value": "",
+      "required" :true 
+    },   
+    "HEROKU_APP_NAME": {
+      "description": "Put Your Heroku App Name Here",
+      "value": "",
+    "required" :true
+    }, 
+    "WAPRESENCE": {
+      "description": "Fill the value: 'unavailable'(for nothing) | 'available'(for alwaysonline) | 'composing'(for typing) | 'recording' | 'paused' ",
+      "required" :false,
+      "value": "unavailable"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Fill the value true if you want bot view your Statuses.",
+      "required" :false,
+      "value": "true"
+    }, 
+    "MSGS_IN_LOG": {
+      "description": "Fill the value true if you want to see Messages in Console.",
+      "required" :false,
+      "value": "false"
+    },
+    "READ_MESSAGE": {
+      "description": "Fill the value true if you want bot to read all messages.",
+      "required" :false,
+      "value": "false"
+    },
+    "DISABLE_PM": {
+      "description": "Disable bot in pm, Take it false if you wanna run bot in your pm (if MODE is Public)",
+      "value": "false",
+      "required" :false
+    },
+    "PREFIX": {
+      "description": "Enter your desired prefix for bot.",
+      "value": "."
+    },
+    "OWNER_NUMBER": {
+      "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+      "value": "923184474176"
+    },
     "SESSION_ID": {
       "description": "put your SESSION_ID here.",
-      "value": "SUHAIL_21_56_02_15_ewogICJjcmVkcy5qc29uIjogIntcIm5vaXNlS2V5XCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiU0RxRXdSMUFnd1ZSV21SY2YyUGRGcjBKbktMdGZYa2lsSWp6cFZwWk9uVT1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIldqcnZST28yRjBHaUFzNWVRQ1lUZk4xais5Y3RSOUkyMnNyWlVIZC9LajA9XCJ9fSxcInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyXCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwib0ZzSEQ5NE9NRS9nTDRVbmpUSVJjeXk5MnQ2N0RIYzJCbHhWNEpoc00wUT1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIm1rYlMxZ0JxY0RkNzk1b3F0NmJuMFB0cXplbEpaWnFaaVZzOVpSZkNCaW89XCJ9fSxcInNpZ25lZElkZW50aXR5S2V5XCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiS0ZiWVdMQVFuRk1xcy9IWXZuSys1RWJWK3F0REwwU2tqclB5ZWtMNmFrVT1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIlBMYjVRT096azlrZXAxdy95R1gwd0VUeXRpWkdZRXJZdkhIY2JVSUlDVmM9XCJ9fSxcInNpZ25lZFByZUtleVwiOntcImtleVBhaXJcIjp7XCJwcml2YXRlXCI6e1widHlwZVwiOlwiQnVmZmVyXCIsXCJkYXRhXCI6XCJlSnFQTjJsRHJXREZWdU5lSFRHc1ZaeDB0NnBVTWREcmNORVVTanZSN2tvPVwifSxcInB1YmxpY1wiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiRm1OK0MvY3JlWnM5KzFWZU04cno5TTB0QjdaVTRwUGZyMm5WeUhYUDR3UT1cIn19LFwic2lnbmF0dXJlXCI6e1widHlwZVwiOlwiQnVmZmVyXCIsXCJkYXRhXCI6XCJqUEViaFllLzRIVHpxcTZOWEVIVmM5aEgvVVhGajBRamV1eTRXYjM2NlhCS0wwRFg1ODdPWFBDb3UySjhiQXVRWHhlOUJkVDFOcWlNZndjc0NUSGJoQT09XCJ9LFwia2V5SWRcIjoxfSxcInJlZ2lzdHJhdGlvbklkXCI6MTg4LFwiYWR2U2VjcmV0S2V5XCI6XCI4ZDhxb01oU1ZhbTdKbStmL1lwSGNtV3RCZW8wSlkwWURlanArY1pjdlMwPVwiLFwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzXCI6W3tcImtleVwiOntcInJlbW90ZUppZFwiOlwiMTc4NjM2ODg0NDlAcy53aGF0c2FwcC5uZXRcIixcImZyb21NZVwiOnRydWUsXCJpZFwiOlwiOEEzRTU3NTZERDg1NTM2RDQ5MDFEQkRFRTQxNkNBRjdcIn0sXCJtZXNzYWdlVGltZXN0YW1wXCI6MTcwODAzNDIwNn1dLFwibmV4dFByZUtleUlkXCI6MzEsXCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZFwiOjMxLFwiYWNjb3VudFN5bmNDb3VudGVyXCI6MSxcImFjY291bnRTZXR0aW5nc1wiOntcInVuYXJjaGl2ZUNoYXRzXCI6ZmFsc2V9LFwiZGV2aWNlSWRcIjpcIkFLQ2ltRVAzU29PNVQ0d0pOb3JDSUFcIixcInBob25lSWRcIjpcIjQ4ZWQ2ODNkLTZhZjMtNDFlNy1hNmVkLTBhNmI0YzI5NDcyMlwiLFwiaWRlbnRpdHlJZFwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiTWFyYjR2NDlhN00zdENNbFE5Q003cERqYzc0PVwifSxcInJlZ2lzdGVyZWRcIjp0cnVlLFwiYmFja3VwVG9rZW5cIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIlFpTzErbmNwVEwrQ2dWYUE0SzFkUnBSd1pkQT1cIn0sXCJyZWdpc3RyYXRpb25cIjp7fSxcInBhaXJpbmdDb2RlXCI6XCJKTEpISFZBQVwiLFwibWVcIjp7XCJpZFwiOlwiMTc4NjM2ODg0NDk6MjZAcy53aGF0c2FwcC5uZXRcIixcImxpZFwiOlwiOTA4NDE0MTA2ODUzNjoyNkBsaWRcIixcIm5hbWVcIjpcInNcXG5zXFxuXFxuc1wifSxcImFjY291bnRcIjp7XCJkZXRhaWxzXCI6XCJDS2ZPdm80R0VKV1J1cTRHR0FFZ0FDZ0FcIixcImFjY291bnRTaWduYXR1cmVLZXlcIjpcIkpjZEhuK3l1MjZyZWp1NEY1MGd3L3FuaEp2ZGxpL1A0S0xMVlY4ZzgvVE09XCIsXCJhY2NvdW50U2lnbmF0dXJlXCI6XCJUd3FjVHZrb0RhM091VWw4b2ZteGdWc25yS2hzclZSSGxYYXo1Rm04UHY0cXZwaHhxeld4blZJMzN1NHE0enBpL1RnazhvVE9vZGxWUk5FOTcvcXdCdz09XCIsXCJkZXZpY2VTaWduYXR1cmVcIjpcIlNSVUJ1TXRjeVUyVnVxUE5ubHkxekkwWjhOOEQzZ0tTTE9nbE5DMm53TTVRR0dzeXJlU0xSdEcxQThsb2lpM2VpVmNpUXVGYnBOZDM0b045Z3dIVGdBPT1cIn0sXCJzaWduYWxJZGVudGl0aWVzXCI6W3tcImlkZW50aWZpZXJcIjp7XCJuYW1lXCI6XCIxNzg2MzY4ODQ0OToyNkBzLndoYXRzYXBwLm5ldFwiLFwiZGV2aWNlSWRcIjowfSxcImlkZW50aWZpZXJLZXlcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIkJTWEhSNS9zcnR1cTNvN3VCZWRJTVA2cDRTYjNaWXZ6K0NpeTFWZklQUDB6XCJ9fV0sXCJwbGF0Zm9ybVwiOlwiYW5kcm9pZFwiLFwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wXCI6MTcwODAzNDIwMSxcIm15QXBwU3RhdGVLZXlJZFwiOlwiQUFBQUFBVW9cIn0iLAogICJhcHAtc3RhdGUtc3luYy1rZXktQUFBQUFBVW8uanNvbiI6ICJ7XCJrZXlEYXRhXCI6XCJ5SVViaGk0bE01UjRWa0ZvdXNOZldFemgxNzFYVE1wOVZTQUJBWkNYMmZNPVwiLFwiZmluZ2VycHJpbnRcIjp7XCJyYXdJZFwiOjE2NDA5OTg2OTUsXCJjdXJyZW50SW5kZXhcIjoxLFwiZGV2aWNlSW5kZXhlc1wiOlswLDFdfSxcInRpbWVzdGFtcFwiOlwiMTcwODAzNDIwNDIwMVwifSIKfQ=="
+      "value": ""
+  
+    },
+    "OPENAI_API_KEY": {
+      "description": "put your OPENAI api key here.Get it from beta.openai.com ",
+      "value": "",
+      "required" :false
+    }, 
+    "ELEVENLAB_API_KEY": {
+      "description": "Put your ElevenLab api key here for Aitts. Watch tutorial from https://youtu.be/HCDcdPtkwg4 ",
+      "value": "",
+      "required" :false
+    }, 
+    "REMOVE_BG_KEY": {
+      "description": "put your REMOVE BG KEY here.Get it from removeBg.com ",
+      "value": "",
+      "required" :false
+    },
+    "MODE": {
+      "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
+      "value": "private"
+    },
+    "PACK_NAME": {
+      "description": "Put Sticker Pack_Name.",
+      "value": "Suhail Md",
+      "required": false 
+    },
+    "PACK_AUTHER": {
+      "description": "Put Sticker Author_Name.",
+      "value": "",
+      "required": false 
     }
-  }
+  }, 
+  "addons": [{ "plan": "heroku-postgresql:basic" }]
 }
- 
