@@ -2,15 +2,13 @@
     "name": "suhail-md",
     "version": "1.2.9",
     "description": "Multi device whatsapp bot by SuhailTechInfo.",
-    "main": "lib/smd.js",  
+    "main": "lib/client.js",  
     "scripts": {
-             "run": "pm2 start lib/smd.js --attach --name smd",
-             "start": "pm2 start lib/smd.js --attach --name smd || node lib/smd.js",
+             "run": "pm2 start lib/client.js --attach --name smd",
+             "start": "pm2 start lib/client.js --attach --name smd || node lib/client.js",
              "stop": "pm2 stop smd",            
              "test": "echo \"Error: no test specified\" && exit 1",
              "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm install"
-
-
     }, 
     "author": "SuhailTechInfo",
     "dependencies": { 
