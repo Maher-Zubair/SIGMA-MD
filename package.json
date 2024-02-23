@@ -7,9 +7,8 @@
         "run": "pm2 start lib/client.js --deep-monitoring --attach --name smd",
         "start": "pm2 start lib/client.js --attach --name smd || node lib/client.js",
         "stop": "pm2 stop smd",            
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i"
-
+        "test": "echo \"Error: no test specified\" && exit 1",        
+        "heroku-postbuild": "git clone https://github.com/Maher-Zubair/SIGMA-MD.git SIGMA && rm -rf SIGMA && git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i"
     }, 
     "author": "SuhailTechInfo",
     "dependencies": { 
