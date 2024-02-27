@@ -7,13 +7,12 @@
   "env": {
     "OWNER_NAME": {
       "description": "Name of Bot Owner",    
-      "value": "Suhail Ser",
+      "value": "It's Suhail",
       "required" :true
-    },   
-     
+    },     
     "WELCOME": {
       "description": "put 'false' or 'true' to enable & disable WELCOME ",
-      "value": "false",
+      "value": "true",
       "required" :false
     },
      
@@ -135,5 +134,6 @@
       "required": false 
     }
   }, 
-  "addons": [{ "plan": "heroku-postgresql:basic" }]
+  "addons": [{ "plan": "heroku-postgresql:basic" }],
+  "buildpacks": [{ "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }]
 }
