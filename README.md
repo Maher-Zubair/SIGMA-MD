@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/Maher-Zubair">
-    <img src="https://img.shields.io/github/followers/Maher-Zubair?style=flat-square&logo=github&color=black">
+    <img src="https://img.shields.io/github/followers/Maher-Zubair?style=flat-circle&logo=github&color=black">
 
    <a href="https://github.com/Maher-Zubair/SIGMA-MD/fork">
     <img src="https://img.shields.io/github/forks/Maher-Zubair/SIGMA-MD?style=flat-square&logo=github&color=black">
